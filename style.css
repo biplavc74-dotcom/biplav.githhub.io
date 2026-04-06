@@ -275,6 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
     background: linear-gradient(to right, #fff, #a0a0a0);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -2px;
 }
@@ -418,7 +419,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image-placeholder {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 400px;
     background: var(--bg-card);
     border-radius: var(--border-radius-lg);
@@ -718,5 +720,20 @@ footer {
         display: block;
         padding: 1rem;
         font-size: 1.2rem;
+    }
+    
+    .blob-wrapper {
+        transform: scale(0.7);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
